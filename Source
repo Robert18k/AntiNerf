@@ -1,0 +1,10 @@
+---------------------------Made By Robert18k----------------------------------------
+
+game.GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Made By";
+    Text = "Robert18k#1018";
+    })
+
+for i,v in pairs(game.Players.LocalPlayer.Character.Boosts:GetChildren()) do
+ v:Destroy()
+end
