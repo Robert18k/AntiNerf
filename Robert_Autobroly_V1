@@ -1,1 +1,111 @@
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v13,v14)local v15={};for v18=1 + (1763 -(1126 + 637)), #v13 do v6(v15,v0(v4(v1(v2(v13,v18,v18 + (2 -1))),v1(v2(v14,1 + 0 + ((v18-(1512 -(1217 + 294)))% #v14),1 + ((v18-(1 + (0 -0)))% #v14) + (662 -((94 -60) + (1615 -(943 + 45)))))))%((3131 -1564) -(338 + (2003 -(675 + 355))))));end return v5(v15);end Settings={[v7(\72\12\230\66\164\39\78\0\225\72,\26\105\140\45\205\73)]=11 + 19,[v7(\140\78\54\55\57\17\127\206\160,\203\60\87\85\122\121\26\173)]=510 -(280 + 215),[v7(\100\26\101\227\202\205\14\193\77,\37\116\17\138\134\168\111\162)]=false,[v7(\220\145\114\138\227\151\120\170\233,\140\227\29\231)]=true,[v7(\1\11\220\108\67\31\7\208,\118\106\181\24\23)]=(460 + 1081) -(898 + 641),[v7(\232\36\253\63\73\137\200\41\234\59\78\175\217,\173\69\143\75\33\221)]=true,[v7(\103\188\74\220\33\85\161\89\223\51\71\167\68\220\25\86\183,\51\206\43\178\82)]=v7(\36,\99\197\229\109),[v7(\202\7\215\210\255\189\246\238\43\195\210\249\160\241\230\1,\137\111\182\160\152\212\152)]=1462 -(134 + 1326),[v7(\243\254\209\16\234\58,\183\140\176\119\133\84)]=v7(\24\204\192\62\51\208\129\26\46\203\210\49,\92\190\161\89)};Moves={v7(\111\50\252\7\208\154\2\20\250\3\204\128,\34\87\136\98\191\232),v7(\16\134\29\195\80\141\227\42\34\128,\81\232\122\166\34\173\177\95),v7(\216\46\132\156\83\214\42\248\18\210,\140\125\164\209\60\186\69),v7(\205\172\254\171\155\236\194\244\253\227\212\164\200\222,\154\195\146\205\187\170\163\154),v7(\221\136\231\2\254\74\255\139\168\100\200\75\244\205\206\75\218\81,\147\237\136\34\169\37),v7(\132\24\144\168\163\60\158\219\190\15\137,\215\108\226\199\205\91\190\144),v7(\13\77\57\83\55\57\25\27\73\55\61\81,\94\57\75\60\89),v7(\235\92\53\225\84\255\143\125\53\235\91\227,\175\57\84\133\56\134),v7(\186\2\188\184\153\85\146\180\138\30,\233\117\217\221),v7(\234\177\203\136\254\178\198\203\200\172,\173\222\175\168)};wait(Settings.waitTime);game:GetService(v7(\252\234\69\198\174\202\236\99\193\179,\175\158\36\180\218)):SetCore(v7(\55\222\218\68\15\180\0\13\221\221\67\32\175\29\11\213,\100\187\180\32\65\219\116),{[v7(\180\71\205\185\217,\224\46\185\213\188\195)]=v7(\113\85\236\120\250\139\86\19\110\91\234\120\168\157\30\11\87\23\187\41\233\209,\60\52\136\29\218\233\47\51),[v7(\222\63\110\57,\138\90\22\77\52\67\67)]=v7(\33\247\245\141\40\201\15\238\248\194\28\138,\96\130\129\226\74\187),[v7(\248\69\221\205\228\205\191\74,\188\48\175\172\144\164\208\36)]=v7(\29\76,\46\124\63\68\192)});local v8=16227014 + 519875526;local v9=3565304751 -0;local v10=2050208717 -(199 + 1214);local v11=game.Players.LocalPlayer.Character.HumanoidRootPart;local v12=game.Players.LocalPlayer;if (game.PlaceId==v8) then game:GetService(v7(\36\65\2\194\150\95\2\80\61\194\148\70\25\71\11,\112\36\110\167\230\48)):Teleport(v9,LocalPlayer);elseif (game.PlaceId==v9) then local v19=(1713 -(287 + 1426)) -0;local v20;while true do if (v19==(840 -(626 + 214))) then local v24=(1811 -(406 + 1405)) -0;while true do if (v24==((1016 + 402) -(637 + 781))) then v20=game.workspace[v7(\197\245\210\215\164\211\226\209\222\173\232\245\201,\135\135\189\187\221)].PrimaryPart;v12.Character.LowerTorso:Destroy();v24=1;end if (v24==(1 + 0 + 0 + 0)) then v19=(2123 -388) -(551 + 64 + (2558 -(1123 + 316)));break;end end end if (v19==(1 + 0 + (110 -(19 + 91)))) then local v25=(769 -(646 + 123)) -0;while true do if (v25==((2055 -1124) -(508 + 167 + (744 -(233 + 255))))) then wait(1 + 0);v11.CFrame=v20.CFrame * CFrame.new(0 -(0 -0),1 + (4 -2),0);v25=3 -(2 -0);end if (v25==(1763 -(1718 + (868 -(376 + 448))))) then v19=7 -5;break;end end end if (v19==2) then wait(1980 -(1453 + (2294 -(938 + 859))));game:GetService(v7(\209\95\70\240\179\75\224\145\214\95\88\227\170\71\247,\133\58\42\149\195\36\146\229)):Teleport(v9,LocalPlayer);break;end end end if (game.PlaceId==v10) then local v16=1762 -(1580 + (1292 -(722 + 388)));local v17;while true do if (v16==((10 -7) + 0 + 0)) then local v21=435 -((188 -58) + 305);while true do if (v21==(0 -(576 -(255 + 321)))) then wait(0.2);v12.Character[Settings.Dragon]:Deactivate();v21=(2866 -2121) -((1533 -896) + (492 -385));end if (v21==(2 -0)) then v16=4 + 0;break;end if (v21==1) then wait((1 -0) + 0);game:GetService(v7(\7\87\204\21\130\191\35\75\193\35,\85\34\162\70\231\205)).RenderStepped:connect(function()local v31=0 -(1883 -(345 + 1538));local v32;while true do if (0==v31) then v32=747 -(181 + (1765 -1199));while true do if (0==v32) then Event=game.Players.LocalPlayer.Backpack.ServerTraits.EatSenzu;Event:FireServer(true);break;end end break;end end end);v21=(2 -0) -0;end end end if (v16==((2220 -696) -(1013 + 509))) then game:GetService(v7(\236\17\212\78\119\32\86\197\221\1,\190\100\186\29\18\82\32\172)).RenderStepped:connect(function()local v26=0;local v27;while true do if (v26==0) then v27=0 + 0;while true do if (v27==(0 + 0)) then v11.CFrame=v17.HumanoidRootPart.CFrame * CFrame.new(1556 -(954 + 602),0,1 + 1);for i,v33 in pairs(v12.Character:GetChildren()) do if ((v33.Name==v7(\139\220\163\68\1\199,\202\191\215\45\110\169)) or (v33.Name==v7(\110\240\242\118\12\176\204\65\227,\47\132\134\23\111\219\165)) or (v33.Name==v7(\155\41\7\237\7,\206\90\110\131\96)) or v33.Name:find(v7(\244\22\226\68,\167\122\141\51))) then v33:Destroy();end end break;end end break;end end end);v12.Backpack[Settings.Dragon].Parent=v12.Character;v12.Character[Settings.Dragon].Activator[v7(\233\141\59\209,\175\225\82\161\28\69)]:Destroy();v12.Character[Settings.Dragon]:Activate();v16=(4 + 10) -11;end if (v16==(0 + 0)) then if (Settings.AntiLeach==true) then if ( #game.Players:GetPlayers()>(1 -(49 -(6 + 43)))) then game:GetService(v7(\21\54\186\175\49\60\164\190\18\54\164\188\40\48\179,\65\83\214\202)):Teleport(v9,LocalPlayer);end end wait((0.2 -0) -0);v12.Backpack.ServerTraits.Input:FireServer({v7(\219,\163\111\76\47\109\229)},CFrame.new());wait(Settings.ChargingDuration);v16=3 -(5 -3);end if (v16==4) then repeat for i,v28 in pairs(v12.Backpack:GetChildren()) do if table.find(Moves,v28.Name) then local v29=0;local v30;while true do if (v29==0) then v30=(414 -266) -(43 + 105);while true do if (v30==(5 -3)) then v28.Parent=v12.Backpack;break;end if (v30==((1881 -(1099 + 503)) -((810 -604) + (1864 -(437 + 1355))))) then local v34=0;local v35;while true do if (v34==0) then v35=(211 -(83 + 128)) -(739 -(217 + 522));while true do if (v35==((286 -(38 + 247)) + (0 -0))) then v30=2 -0;break;end if (v35==(0 + 0)) then local v38=0;while true do if (0==v38) then wait((1695.1 -(1672 + 23)) -0);v28:Deactivate();v38=1;end if (v38==1) then v35=2 -(1 + 0);break;end end end end break;end end end if (v30==(313 -((1533 -(890 + 340)) + (851 -(403 + 438))))) then local v36=0;while true do if (v36==(1 -(434 -(321 + 113)))) then v30=2 -1;break;end if ((622 -(196 + 426))==v36) then local v37=0;while true do if (0==v37) then v28.Parent=v12.Character;v28:Activate();v37=1;end if (v37==1) then v36=3 -2;break;end end end end end end break;end end end end until(v17.Humanoid.Health<=(1139 -((1177 -(280 + 660)) + 901))) or (v12.Character.Humanoid.Health<=((2738 -1802) -(653 + (1087 -805))))wait(0.4 -(1591 -(847 + 744)));game:GetService(v7(\79\39\46\179\229\116\48\54\133\240\105\52\43\181\240,\27\66\66\214\149)):Teleport(v9);break;end if (v16==(356 -(30 + 325))) then local v22=0;local v23;while true do if (v22==0) then v23=0;while true do if (((112 + 1720) -((2640 -(143 + 1372)) + 355 + 350))==v23) then v16=2 -0;break;end if (v23==(1 + (836 -(107 + 729)))) then v12.Backpack.ServerTraits.Input:FireServer({v7(\230\203\84\175,\158\164\50\201\28\161\61)},CFrame.new());v17=game.Workspace.Live[v7(\91\83\69\16\85\188\91\115,\25\33\42\124\44\156)];v23=2 + 0;end if (v23==0) then v12.Backpack.ServerTraits.Transform:FireServer(Settings.TransformationKey);wait(1);v23=593 -((853 -(209 + 379)) + (1380 -1053));end end break;end end end end end
+--This Autobroly was made by Robert18k#3438. Big W to superior48#9447 Who helped me create this.
+
+--VERSION 1 OF AUTOBROLY!!! MORE WILL COME ;)
+
+Settings = {
+
+    RejoinTime = 30,
+    GrabCheck = 15,
+    AntiLeach = false,
+    PromoteMe = true,
+    waitTime = 2,
+    EarthTeleport = true,
+    TransformationKey = "G",--Or "h"
+    ChargingDuration = 2,
+    Dragon = "Dragon Crush", -- Or Dragon Throw
+
+}
+
+Moves = {
+    "Meteor Crash";
+    "Anger Rush";
+    "TS Molotov";
+    "Wolf Fang Fist";
+    "Neo Wolf Fang Fist";
+    "Strong Kick";
+    "Strong Punch";
+    "Deadly Dance";
+    "Sweep Kick";
+    "God Slicer";
+    }
+
+
+    --[Wait Time]---------
+    wait(Settings.waitTime)
+    ---------Credits--------------
+    game:GetService("StarterGui"):SetCore(
+        "SendNotification",
+        {
+            Title = "Made by Robert18k#3438",
+            Text = "Autobroly V1",
+            Duration = "30"
+        }
+    )
+    
+    ---------------------------------------
+    --Variables--
+    local Earth = 536102540
+    local Queue = 3565304751
+    local BrolyPlace = 2050207304
+    local RootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local Client = game.Players.LocalPlayer
+------Queue-----
+    if game.PlaceId == Earth then
+        game:GetService("TeleportService"):Teleport(Queue, LocalPlayer)
+    elseif game.PlaceId == Queue then
+        local pad = game.workspace['BrolyTeleport'].PrimaryPart
+        Client.Character.LowerTorso:Destroy()
+        wait(1)
+        RootPart.CFrame = pad.CFrame * CFrame.new(0,3,0)
+        wait(30)
+        game:GetService("TeleportService"):Teleport(Queue, LocalPlayer)
+    end
+    -----BROLY------------------------------------------------------------------
+    if game.PlaceId == BrolyPlace then
+        if Settings.AntiLeach == true then
+            if #game.Players:GetPlayers() > 1 then
+                game:GetService("TeleportService"):Teleport(Queue, LocalPlayer)
+            end
+        end
+    wait(.2)
+    Client.Backpack.ServerTraits.Input:FireServer({"x"}, CFrame.new())
+    wait(Settings.ChargingDuration)
+    Client.Backpack.ServerTraits.Transform:FireServer(Settings.TransformationKey)
+    wait(1)
+    Client.Backpack.ServerTraits.Input:FireServer({"xoff"}, CFrame.new())
+
+local broly = game.Workspace.Live['Broly BR']
+game:GetService("RunService").RenderStepped:connect(function()
+    RootPart.CFrame = broly.HumanoidRootPart.CFrame  *  CFrame.new(0,0,2)
+    for i, v in pairs(Client.Character:GetChildren()) do
+        if v.Name == "Action" or v.Name == "Attacking" or v.Name == "Using" or v.Name:find("Slow") then
+                        v:Destroy()
+        end
+        end
+     
+
+end)
+Client.Backpack[Settings.Dragon].Parent = Client.Character
+Client.Character[Settings.Dragon].Activator["Flip"]:Destroy()
+Client.Character[Settings.Dragon]:Activate()
+wait(.2)
+Client.Character[Settings.Dragon]:Deactivate()
+wait(1)
+game:GetService("RunService").RenderStepped:connect(function()
+    Event = game.Players.LocalPlayer.Backpack.ServerTraits.EatSenzu
+    Event:FireServer(true)
+end)
+repeat
+    for i, v in pairs(Client.Backpack:GetChildren()) do
+        if table.find(Moves, v.Name) then
+        v.Parent = Client.Character
+        v:Activate()
+        wait(.1)
+        v:Deactivate()
+        v.Parent = Client.Backpack
+    end
+end
+until broly.Humanoid.Health <= 1 or Client.Character.Humanoid.Health <= 1
+wait(.4)
+game:GetService("TeleportService"):Teleport(Queue)
+end
