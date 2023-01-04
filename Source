@@ -1,4 +1,5 @@
----------------------------Made By Robert18k----------------------------------------
+----MADE BY ROBERT18K!!!
+---ANTINERF ON RANED EARTH/HEAVEN!
 
 for i,v in pairs(game.Players.LocalPlayer.Character.Boosts:GetChildren()) do
  v:Destroy()
