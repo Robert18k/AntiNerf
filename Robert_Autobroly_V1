@@ -1,0 +1,111 @@
+--This Autobroly was made by Robert18k#3438. Big W to superior48#9447 Who helped me create this.
+
+--VERSION 1 OF AUTOBROLY!!! MORE WILL COME ;)
+
+Settings = {
+
+    RejoinTime = 30,
+    GrabCheck = 15,
+    AntiLeach = false,
+    PromoteMe = true,
+    waitTime = 2,
+    EarthTeleport = true,
+    TransformationKey = "G",--Or "h"
+    ChargingDuration = 2,
+    Dragon = "Dragon Crush", -- Or Dragon Throw
+
+}
+
+Moves = {
+    "Meteor Crash";
+    "Anger Rush";
+    "TS Molotov";
+    "Wolf Fang Fist";
+    "Neo Wolf Fang Fist";
+    "Strong Kick";
+    "Strong Punch";
+    "Deadly Dance";
+    "Sweep Kick";
+    "God Slicer";
+    }
+
+
+    --[Wait Time]---------
+    wait(Settings.waitTime)
+    ---------Credits--------------
+    game:GetService("StarterGui"):SetCore(
+        "SendNotification",
+        {
+            Title = "Made by Robert18k#3438",
+            Text = "Autobroly V1",
+            Duration = "30"
+        }
+    )
+    
+    ---------------------------------------
+    --Variables--
+    local Earth = 536102540
+    local Queue = 3565304751
+    local BrolyPlace = 2050207304
+    local RootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local Client = game.Players.LocalPlayer
+------Queue-----
+    if game.PlaceId == Earth then
+        game:GetService("TeleportService"):Teleport(Queue, LocalPlayer)
+    elseif game.PlaceId == Queue then
+        local pad = game.workspace['BrolyTeleport'].PrimaryPart
+        Client.Character.LowerTorso:Destroy()
+        wait(1)
+        RootPart.CFrame = pad.CFrame * CFrame.new(0,3,0)
+        wait(30)
+        game:GetService("TeleportService"):Teleport(Queue, LocalPlayer)
+    end
+    -----BROLY------------------------------------------------------------------
+    if game.PlaceId == BrolyPlace then
+        if Settings.AntiLeach == true then
+            if #game.Players:GetPlayers() > 1 then
+                game:GetService("TeleportService"):Teleport(Queue, LocalPlayer)
+            end
+        end
+    wait(.2)
+    Client.Backpack.ServerTraits.Input:FireServer({"x"}, CFrame.new())
+    wait(Settings.ChargingDuration)
+    Client.Backpack.ServerTraits.Transform:FireServer(Settings.TransformationKey)
+    wait(1)
+    Client.Backpack.ServerTraits.Input:FireServer({"xoff"}, CFrame.new())
+
+local broly = game.Workspace.Live['Broly BR']
+game:GetService("RunService").RenderStepped:connect(function()
+    RootPart.CFrame = broly.HumanoidRootPart.CFrame  *  CFrame.new(0,0,2)
+    for i, v in pairs(Client.Character:GetChildren()) do
+        if v.Name == "Action" or v.Name == "Attacking" or v.Name == "Using" or v.Name:find("Slow") then
+                        v:Destroy()
+        end
+        end
+     
+
+end)
+Client.Backpack[Settings.Dragon].Parent = Client.Character
+Client.Character[Settings.Dragon].Activator["Flip"]:Destroy()
+Client.Character[Settings.Dragon]:Activate()
+wait(.2)
+Client.Character[Settings.Dragon]:Deactivate()
+wait(1)
+game:GetService("RunService").RenderStepped:connect(function()
+    Event = game.Players.LocalPlayer.Backpack.ServerTraits.EatSenzu
+    Event:FireServer(true)
+end)
+repeat
+    for i, v in pairs(Client.Backpack:GetChildren()) do
+        if table.find(Moves, v.Name) then
+        v.Parent = Client.Character
+        v:Activate()
+        wait(.1)
+        v:Deactivate()
+        v.Parent = Client.Backpack
+    end
+end
+until broly.Humanoid.Health <= 1 or Client.Character.Humanoid.Health <= 1
+wait(.4)
+game:GetService("TeleportService"):Teleport(Queue)
+end
